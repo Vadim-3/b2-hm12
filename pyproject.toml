@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "b2-hm12"
+version = "0.1.0"
+description = ""
+authors = ["Vadim-3 <128088822+Vadim-3@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+alembic = "^1.12.0"
+fastapi = "^0.103.2"
+pydantic = {extras = ["email"], version = "^2.4.2"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+sqlalchemy = "^2.0.22"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+psycopg2 = "^2.9.9"
+python-multipart = "^0.0.6"
+passlib = "^1.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
